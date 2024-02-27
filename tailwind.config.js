@@ -16,6 +16,8 @@ module.exports = {
       t: "0 -1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
       orange: "0px 20px 20px -15px rgba(14,18,59,0.81) ",
       "orange-md": "0px 20px 40px -15px rgba(14,18,59,0.81) ",
+      "orange-lg": "0px 40px 60px -15px rgba(14,18,59,0.81) ",
+
       none: "none",
     },
     colors: {

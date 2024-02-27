@@ -46,15 +46,16 @@ const Hero = ({
             </p>
             <ButtonPrimary>Get Started</ButtonPrimary>
           </div>
-          <div className="flex w-full">
-            <motion.div className="w-2/4 h-2/4" variants={scrollAnimation}>
+          <div className="flex w-full justify-center rounded-full">
+            <motion.div className="w-1/3 h-2/4 " variants={scrollAnimation}>
               <Image
                 src={"/assets/HeroImage.png"}
                 alt="ImageHero"
                 quality={100}
                 width={480}
-                height={120}
+                height={480}
                 layout="responsive"
+                className="rounded-full shadow-orange-lg"
               />
             </motion.div>
           </div>
