@@ -31,7 +31,7 @@ const Hero = ({
     <div className="max-w-screen-xl mt-24 px-8 xl:px-16 mx-auto" id="about">
       <ScrollAnimationWrapper>
         <motion.div
-          className="grid grid-flow-row sm:grid-flow-col grid-rows-2 md:grid-rows-1 sm:grid-cols-2 gap-8 py-6 sm:py-16"
+          className="grid grid-flow-row sm:grid-flow-col grid-rows-2 md:grid-rows-1 sm:grid-cols-2 gap-8 py-4 sm:py-16"
           variants={scrollAnimation}
         >
           <div className=" flex flex-col justify-center items-start row-start-2 sm:row-start-1">
@@ -47,13 +47,13 @@ const Hero = ({
             <ButtonPrimary>Get Started</ButtonPrimary>
           </div>
           <div className="flex w-full">
-            <motion.div className="h-full w-full" variants={scrollAnimation}>
+            <motion.div className="w-2/4 h-2/4" variants={scrollAnimation}>
               <Image
-                src="/assets/Illustration1.png"
-                alt="VPN Illustrasi"
+                src={"/assets/HeroImage.png"}
+                alt="ImageHero"
                 quality={100}
-                width={612}
-                height={383}
+                width={480}
+                height={120}
                 layout="responsive"
               />
             </motion.div>
