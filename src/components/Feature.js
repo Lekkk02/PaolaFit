@@ -5,7 +5,12 @@ import { motion } from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 
-const features = ["Feature 1", "Feature 2", "Feature 3", "Feature 4"];
+const features = [
+  "Choose your favorite colors",
+  "Select your perfect size",
+  "Feel the luxurious textures",
+  "Discover your ideal fit",
+];
 
 const Feature = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
@@ -16,15 +21,19 @@ const Feature = () => {
       id="feature"
     >
       <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-2 gap-8 p  y-8 my-12">
-        <ScrollAnimationWrapper className="flex w-full justify-end">
-          <motion.div className="h-full w-full p-4" variants={scrollAnimation}>
+        <ScrollAnimationWrapper className="flex w-3/4 justify-end">
+          <motion.div
+            className="h-2/3 w-2/3 rounded-full  p-4"
+            variants={scrollAnimation}
+          >
             <Image
-              src="/assets/Illustration2.png"
+              src="/assets/stories-pao.png"
               alt="VPN Illustrasi"
               layout="responsive"
               quality={100}
-              height={414}
-              width={508}
+              height={10}
+              width={10}
+              className="drop-shadow-2xl"
             />
           </motion.div>
         </ScrollAnimationWrapper>
@@ -33,10 +42,12 @@ const Feature = () => {
             className="flex flex-col items-end justify-center ml-auto w-full lg:w-9/12"
             variants={scrollAnimation}
           >
-            <h3 className="text-3xl lg:text-4xl font-medium leading-relaxed text-black-600">
-              **********Undefined text**********
+            <h3 className="text-3xl lg:text-4xl font-medium leading-relaxed italic text-black-600">
+              Visit our shop
             </h3>
-            <p className="my-2 text-black-500">Visit my shop</p>
+            <p className="my-2 text-black-500">
+              Explore our curated collection of fitness wear
+            </p>
             <ul className="text-black-500 self-start list-inside ml-8">
               {features.map((feature, index) => (
                 <motion.li

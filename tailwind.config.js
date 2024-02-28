@@ -1,10 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
+  content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
     boxShadow: {
       sm: "0 1px 2px 0 rgba(0, 0, 0, 0.05)",
@@ -20,33 +16,35 @@ module.exports = {
 
       none: "none",
     },
-    colors: {
-      transparent: "transparent",
-      black: {
-        500: "#4F5665",
-        600: "#0B132A",
-      },
-      orange: {
-        100: "#ececff",
-        500: "#0e123b",
-      },
-      green: {
-        500: "#2FAB73",
-      },
-      white: {
-        300: "#F8F8F8",
-        500: "#fff",
-      },
-      purple: {
-        500: "#0e123b",
-      },
-      gray: {
-        100: "#EEEFF2",
-        400: "#AFB5C0",
-        500: "#DDDDDD",
+
+    extend: {
+      colors: {
+        transparent: "transparent",
+        black: {
+          500: "#4F5665",
+          600: "#0B132A",
+        },
+        orange: {
+          100: "#ececff",
+          500: "#0e123b",
+        },
+        green: {
+          500: "#2FAB73",
+        },
+        white: {
+          300: "#F8F8F8",
+          500: "#fff",
+        },
+        purple: {
+          500: "#0e123b",
+        },
+        gray: {
+          100: "#EEEFF2",
+          400: "#AFB5C0",
+          500: "#DDDDDD",
+        },
       },
     },
-    extend: {},
   },
   variants: {
     extend: {

@@ -9,19 +9,19 @@ import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 const Hero = ({
   listUser = [
     {
-      name: "Info_Interes 1",
-      number: "390",
+      name: "Happy customers",
+      number: "300",
       icon: "/assets/Icon/heroicons_sm-user.svg",
     },
     {
-      name: "Info_Interes 2",
-      number: "20",
-      icon: "/assets/Icon/gridicons_location.svg",
+      name: "Online sessions completed",
+      number: "2000",
+      icon: "/assets/Icon/onlineServices.svg",
     },
     {
-      name: "Info_Interes 3",
-      number: "50",
-      icon: "/assets/Icon/bx_bxs-server.svg",
+      name: "Customized nutrition plans",
+      number: "500",
+      icon: "/assets/Icon/staricon.svg",
     },
   ],
 }) => {
@@ -34,20 +34,24 @@ const Hero = ({
           className="grid grid-flow-row sm:grid-flow-col grid-rows-2 md:grid-rows-1 sm:grid-cols-2 gap-8 py-4 sm:py-16"
           variants={scrollAnimation}
         >
-          <div className=" flex flex-col justify-center items-start row-start-2 sm:row-start-1">
+          <div className=" flex flex-col justify-center items-center md:items-start row-start-2 sm:row-start-1">
             <h1 className="text-3xl lg:text-4xl xl:text-5xl font-light text-black-600 leading-normal">
-              Lorem ipsum dolor sit amet
-              <strong className="font-bold">PaolaFitness</strong>.
+              Discover your best self with{" "}
+              <strong className="font-bold text-sky-500 ">
+                Pao<span className="">Fit</span>
+              </strong>
             </h1>
             <p className="text-black-500 mt-4 mb-6">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-              volutpat arcu ut nunc fringilla venenatis. Nunc eleifend nunc
-              orci, vulputate
+              Welcome to My Fitness World! Explore clothing, discover recipes,
+              and engage in customized exercises.
             </p>
             <ButtonPrimary>Get Started</ButtonPrimary>
           </div>
-          <div className="flex w-full justify-center rounded-full">
-            <motion.div className="w-1/3 h-2/4 " variants={scrollAnimation}>
+          <div className="flex w-full justify-center rounded-full self-center">
+            <motion.div
+              className="w-2/4 h-1/3 md:w-2/5 md:h-2/4"
+              variants={scrollAnimation}
+            >
               <Image
                 src={"/assets/HeroImage.png"}
                 alt="ImageHero"
@@ -76,7 +80,11 @@ const Hero = ({
                 </div>
                 <div className="flex flex-col">
                   <p className="text-xl text-black-600 font-bold">
-                    {listUsers.number}+
+                    {
+                      /* listUsers.number */ listUsers.number != ""
+                        ? listUsers.number + "+"
+                        : ""
+                    }
                   </p>
                   <p className="text-lg text-black-500">{listUsers.name}</p>
                 </div>

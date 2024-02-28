@@ -11,40 +11,40 @@ import ArrowNext from "../public/assets/Icon/eva_arrow-next-fill.svg";
 const Testimoni = ({
   listTestimoni = [
     {
-      name: "iezh Robert",
+      name: "María Flores",
       image: "/assets/people-3.png",
-      city: "Warsaw",
-      country: "Poland",
-      rating: "4.5",
+      city: "Marietta",
+      country: "USA",
+      rating: "5",
       testimoni:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod enim id interdum dignissim. Proin semper efficitur urna, ac posuere sem imperdiet eget. Duis molestie mattis velit non porttitor. Aenean fermentum dui sed imperdiet viverra. Mauris at nulla libero. Nulla laoreet efficitur risus nec iaculis.",
+        "Muchisimas gracias por tus consejos y tu profesionalismo ante toda la ayuda que te pedí, eres lo que estaba buscando una entrenadora que entendiera mis gustos al respecto de mi alimentación y gracias a ti me pude adaptar rápido a mi nueva dieta. Gracias por todo de verdad te recomiendo al 100% con los ojos cerrados",
     },
     {
-      name: "iezh Robert",
+      name: "Juan Ramón",
       image: "/assets/people-3.png",
-      city: "Warsaw",
-      country: "Poland",
-      rating: "4.5",
+      city: "Seattle",
+      country: "USA",
+      rating: "5",
       testimoni:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod enim id interdum dignissim. Proin semper efficitur urna, ac posuere sem imperdiet eget. Duis molestie mattis velit non porttitor. Aenean fermentum dui sed imperdiet viverra. Mauris at nulla libero. Nulla laoreet efficitur risus nec iaculis.",
+        "Desde que empecé tus entrenamientos y tu dieta me siento mucho mejor, puedo dormir mejor, no tengo hambre, gracias por todo tu esfuerzo y conocimiento y tantos consejos siempre cada día tienes algo que aporta para mi alimentación y los ejercicios los explicas tan bien, Dios te bendiga por siempre, gracias porque ahora veo los resultados en tan poco tiempo",
     },
     {
-      name: "iezh Robert",
+      name: "Patricia Miller",
       image: "/assets/people-3.png",
-      city: "Warsaw",
-      country: "Poland",
-      rating: "4.5",
+      city: "Vancouver",
+      country: "USA",
+      rating: "5",
       testimoni:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod enim id interdum dignissim. Proin semper efficitur urna, ac posuere sem imperdiet eget. Duis molestie mattis velit non porttitor. Aenean fermentum dui sed imperdiet viverra. Mauris at nulla libero. Nulla laoreet efficitur risus nec iaculis.",
+        "Gracias por tus consejos, con tu asesoría ya he rebajado 8 libras y voy a ir por más. Te recomiendo al 100%",
     },
     {
-      name: "iezh Robert",
+      name: "Ana Hernández",
       image: "/assets/people-3.png",
-      city: "Warsaw",
-      country: "Poland",
-      rating: "4.5",
+      city: "Cancún",
+      country: "México",
+      rating: "5",
       testimoni:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod enim id interdum dignissim. Proin semper efficitur urna, ac posuere sem imperdiet eget. Duis molestie mattis velit non porttitor. Aenean fermentum dui sed imperdiet viverra. Mauris at nulla libero. Nulla laoreet efficitur risus nec iaculis.",
+        "Las fajas de Paola son excelentes! Una de las mejores fajas de compresión que he probado, de alta calidad y el fit es espectacular, reduce el abdomen de inmediato sin incomodidad! Te da una figura hourglass y muy bonita. El uso diario y constante me han ayudado a perder peso, reduciendo centímetros mi abdomen. Recomendada al 100% sin duda alguna! Gracias Paola!",
     },
   ],
 }) => {
@@ -106,7 +106,7 @@ const Testimoni = ({
                       {listTestimonis.name}
                     </p>
                     <p className="text-sm text-black-500 capitalize">
-                      {listTestimonis.city},{listTestimonis.country}
+                      {listTestimonis.city}, {listTestimonis.country}
                     </p>
                   </div>
                 </div>
