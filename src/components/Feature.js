@@ -4,6 +4,7 @@ import React, { useMemo } from "react";
 import { motion } from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
+import ButtonOutline from "./misc/ButtonOutline.";
 
 const features = [
   "Choose your favorite colors",
@@ -23,26 +24,26 @@ const Feature = () => {
       <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-2 gap-8 p  y-8 my-12">
         <ScrollAnimationWrapper className="flex w-3/4 justify-end">
           <motion.div
-            className="h-2/3 w-2/3 rounded-full  p-4"
+            className="h-2/3 w-2/3 rounded-full"
             variants={scrollAnimation}
           >
             <Image
-              src="/assets/stories-pao.png"
+              src="/assets/PaolaStories.png"
               alt="VPN Illustrasi"
               layout="responsive"
               quality={100}
               height={10}
               width={10}
-              className="drop-shadow-2xl"
+              className="drop-shadow-xxl rounded-full  "
             />
           </motion.div>
         </ScrollAnimationWrapper>
         <ScrollAnimationWrapper>
           <motion.div
-            className="flex flex-col items-end justify-center ml-auto w-full lg:w-9/12"
+            className="flex flex-col items-end justify-center w-full lg:w-9/12"
             variants={scrollAnimation}
           >
-            <h3 className="text-3xl lg:text-4xl font-medium leading-relaxed italic text-black-600">
+            <h3 className="text-3xl lg:text-4xl font-bold leading-relaxed text-black-600">
               Visit our shop
             </h3>
             <p className="my-2 text-black-500">
@@ -66,6 +67,7 @@ const Feature = () => {
                 </motion.li>
               ))}
             </ul>
+            <ButtonOutline>Shop now</ButtonOutline>
           </motion.div>
         </ScrollAnimationWrapper>
       </div>

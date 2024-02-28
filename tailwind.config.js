@@ -16,7 +16,9 @@ module.exports = {
 
       none: "none",
     },
-
+    dropShadow: {
+      xxl: "0 25px 25px rgba(0, 0, 0, 0.5)",
+    },
     extend: {
       colors: {
         transparent: "transparent",
