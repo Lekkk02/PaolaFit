@@ -174,14 +174,14 @@ const Pricing = () => {
               variants={scrollAnimation}
               className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-relaxed w-9/12 sm:w-6/12 lg:w-4/12 mx-auto"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              <p>*****LIST.MAP() DE ROPA*****</p>
             </motion.h3>
             <motion.p
               className="leading-normal  mx-auto my-2 w-10/12 sm:w-7/12 lg:w-6/12"
               variants={scrollAnimation}
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-              euismod enim id interdum dignissim.
+              euismod enim id interdum dignissim
             </motion.p>
           </ScrollAnimationWrapper>
         </div>
@@ -191,15 +191,14 @@ const Pricing = () => {
               variants={scrollAnimation}
               className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-normal w-9/12 sm: lg:w-4/12 mx-auto"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-              euismod enim id interdum dignissim.
+              Testimonials & Reviews
             </motion.h3>
             <motion.p
               variants={scrollAnimation}
               className="leading-normal mx-auto mb-2 mt-4 w-10/12 sm:w-7/12 lg:w-6/12"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-              euismod enim id interdum dignissim.
+              Discover what our valued clients have to say about their
+              experiences with us.
             </motion.p>
           </ScrollAnimationWrapper>
           <ScrollAnimationWrapper className="w-full flex flex-col py-12">
@@ -212,9 +211,11 @@ const Pricing = () => {
               <div className="absolute rounded-xl  py-8 sm:py-14 px-6 sm:px-12 lg:px-16 w-full flex flex-col sm:flex-row justify-between items-center z-10 bg-white-500">
                 <div className="flex flex-col text-left w-10/12 sm:w-7/12 lg:w-5/12 mb-6 sm:mb-0">
                   <h5 className="text-black-600 text-xl sm:text-2xl lg:text-3xl leading-relaxed font-medium">
-                    Subscribe Now for <br /> Get Special Features!
+                    Start your fitness journey with{" "}
+                    <span className="text-sky-500 font-bold">PaoFit</span>
+                    <br />
                   </h5>
-                  <p>Lets subscribe with us and find the fun.</p>
+                  <p>You should visit our store, we have special offers</p>
                 </div>
                 <ButtonPrimary>Get Started</ButtonPrimary>
               </div>
