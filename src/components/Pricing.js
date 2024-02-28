@@ -47,7 +47,7 @@ const Pricing = () => {
               >
                 <div className="p-4 lg:p-0 mt-6 lg:mt-16">
                   <Image
-                    src="/assets/Free.png"
+                    src="/assets/Icon/dumbell.svg"
                     width={145}
                     height={165}
                     alt="Free Plan"
@@ -58,23 +58,21 @@ const Pricing = () => {
                 </p>
                 <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow">
                   <li className="relative check custom-list my-2">
-                    Plan 1 - Feature
+                    2 days a week
                   </li>
                   <li className="relative check custom-list my-2">
-                    Plan 1 - Feature
+                    Weight Check: Every 2 weeks
                   </li>
                   <li className="relative check custom-list my-2">
-                    Plan 1 - Feature
-                  </li>
-                  <li className="relative check custom-list my-2">
-                    Plan 1 - Feature
+                    Personalized Nutritional Plan
                   </li>
                 </ul>
                 <div className="flex flex-col w-full justify-center mb-8 flex-none mt-12">
                   <p className="text-2xl text-black-600 text-center mb-4 ">
-                    $$price
+                    $150 / mo
                   </p>
-                  <ButtonOutline>Select</ButtonOutline>
+                  {/*                   <ButtonOutline>Select</ButtonOutline>
+                   */}{" "}
                 </div>
               </motion.div>
             </ScrollAnimationWrapper>
@@ -91,7 +89,7 @@ const Pricing = () => {
               >
                 <div className="p-4 lg:p-0 mt-6 lg:mt-16">
                   <Image
-                    src="/assets/Standard.png"
+                    src="/assets/Icon/dumbell.svg"
                     width={145}
                     height={165}
                     alt="Standard Plan"
@@ -102,26 +100,24 @@ const Pricing = () => {
                 </p>
                 <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow">
                   <li className="relative check custom-list my-2">
-                    Plan 2 - Feature
+                    3 days a week
                   </li>
                   <li className="relative check custom-list my-2">
-                    Plan 2 - Feature
+                    Weight Check: Every 2 weeks
                   </li>
                   <li className="relative check custom-list my-2">
-                    Plan 2 - Feature
+                    Personalized Nutritional Plan
                   </li>
                   <li className="relative check custom-list my-2">
-                    Plan 2 - Feature
-                  </li>
-                  <li className="relative check custom-list my-2">
-                    Plan 2 - Feature
+                    24/7 Support
                   </li>
                 </ul>
                 <div className="flex flex-col w-full justify-center mb-8 flex-none mt-12">
                   <p className="text-2xl text-black-600 text-center mb-4 ">
-                    $$price <span className="text-black-500">/ mo</span>
+                    $250<span className="text-black-500"> / mo</span>
                   </p>
-                  <ButtonOutline>Select</ButtonOutline>
+                  {/*                   <ButtonOutline>Select</ButtonOutline>
+                   */}{" "}
                 </div>
               </motion.div>
             </ScrollAnimationWrapper>
@@ -138,7 +134,7 @@ const Pricing = () => {
               >
                 <div className="p-4 lg:p-0 mt-6 lg:mt-16">
                   <Image
-                    src="/assets/Premium.png"
+                    src="/assets/Icon/dumbell.svg"
                     width={145}
                     height={165}
                     alt="Premium Plan"
@@ -149,30 +145,24 @@ const Pricing = () => {
                 </p>
                 <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow">
                   <li className="relative check custom-list my-2">
-                    Plan 3 - Feature
+                    4 days a week
                   </li>
                   <li className="relative check custom-list my-2">
-                    Plan 3 - Feature
+                    Weight Check: Every 2 weeks
                   </li>
                   <li className="relative check custom-list my-2">
-                    Plan 3 - Feature
+                    Personalized Nutritional Plan
                   </li>
                   <li className="relative check custom-list my-2">
-                    Plan 3 - Feature
-                  </li>
-                  <li className="relative check custom-list my-2">
-                    Plan 3 - Feature
-                  </li>
-                  <li className="relative check custom-list my-2">
-                    Plan 3 - Feature
+                    24/7 Support
                   </li>
                 </ul>
                 <div className="flex flex-col w-full justify-center mb-8 flex-none mt-12">
                   <p className="text-2xl text-black-600 text-center mb-4 ">
-                    $$price <span className="text-black-500">/ mo</span>
+                    $300 <span className="text-black-500">/ mo</span>
                   </p>
-
-                  <ButtonOutline>Select</ButtonOutline>
+                  {/*                   <ButtonOutline>Select</ButtonOutline>
+                   */}{" "}
                 </div>
               </motion.div>
             </ScrollAnimationWrapper>

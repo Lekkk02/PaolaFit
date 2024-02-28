@@ -40,7 +40,7 @@ const Feature = () => {
         </ScrollAnimationWrapper>
         <ScrollAnimationWrapper>
           <motion.div
-            className="flex flex-col items-end justify-center w-full lg:w-9/12"
+            className="flex flex-col items-center lg:items-end justify-center w-full lg:w-9/12"
             variants={scrollAnimation}
           >
             <h3 className="text-3xl lg:text-4xl font-bold leading-relaxed text-black-600">
@@ -67,7 +67,9 @@ const Feature = () => {
                 </motion.li>
               ))}
             </ul>
-            <ButtonOutline>Shop now</ButtonOutline>
+            <div className="mt-6  self-center">
+              <ButtonOutline>Shop now</ButtonOutline>
+            </div>
           </motion.div>
         </ScrollAnimationWrapper>
       </div>
