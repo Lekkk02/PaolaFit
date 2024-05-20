@@ -14,7 +14,7 @@ const Pricing = () => {
 
   return (
     <div
-      className="bg-gradient-to-b from-white-300 to-white-500 w-full py-14"
+      className="bg-gradient-to-b  from-white-300 to-white-500 w-full py-14"
       id="pricing"
     >
       <div className="max-w-screen-xl  px-6 sm:px-8 lg:px-16 mx-auto flex flex-col w-full text-center justify-center">
@@ -168,23 +168,7 @@ const Pricing = () => {
             </ScrollAnimationWrapper>
           </div>
         </div>
-        <div className="flex flex-col w-full my-16">
-          <ScrollAnimationWrapper>
-            <motion.h3
-              variants={scrollAnimation}
-              className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-relaxed w-9/12 sm:w-6/12 lg:w-4/12 mx-auto"
-            >
-              <p>*****LIST.MAP() DE ROPA*****</p>
-            </motion.h3>
-            <motion.p
-              className="leading-normal  mx-auto my-2 w-10/12 sm:w-7/12 lg:w-6/12"
-              variants={scrollAnimation}
-            >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-              euismod enim id interdum dignissim
-            </motion.p>
-          </ScrollAnimationWrapper>
-        </div>
+
         <div className="flex flex-col w-full my-16" id="testimoni">
           <ScrollAnimationWrapper>
             <motion.h3

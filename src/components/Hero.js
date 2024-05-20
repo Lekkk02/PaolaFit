@@ -28,7 +28,7 @@ const Hero = ({
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
 
   return (
-    <div className="max-w-screen-xl mt-16 px-8 xl:px-16 mx-auto" id="about">
+    <div className="max-w-screen-xl mt-16 px-8 xl:px-16 mx-auto">
       <ScrollAnimationWrapper>
         <motion.div
           className="grid grid-flow-row sm:grid-flow-col grid-rows-2 md:grid-rows-1 sm:grid-cols-2 gap-8 py-4 sm:py-16"
@@ -47,19 +47,20 @@ const Hero = ({
             </p>
             <ButtonPrimary>Get Started</ButtonPrimary>
           </div>
-          <div className="flex w-full justify-center rounded-full self-center">
+          <div className="flex w-full justify-center  self-center">
             <motion.div
               className="w-2/4 h-1/3 md:w-2/5 md:h-2/4"
               variants={scrollAnimation}
             >
               <Image
-                src={"/assets/HeroImage.png"}
+                src={"/assets/PaolaHero.png"}
                 alt="ImageHero"
+                id="imageHero"
                 quality={100}
                 width={480}
                 height={480}
                 layout="responsive"
-                className="rounded-full shadow-orange-lg"
+                className="rounded-full shadow-orange-lg "
               />
             </motion.div>
           </div>
