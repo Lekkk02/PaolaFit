@@ -4,6 +4,7 @@ import Pricing from "../components/Pricing";
 import Hero from "../components/Hero";
 import Layout from "../components/Layout/Layout";
 import About from "@/components/About";
+import Clothes from "@/components/Clothes";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
         <Hero />
         <About />
         <Feature />
+        <Clothes />
         <Pricing />
       </Layout>
     </>

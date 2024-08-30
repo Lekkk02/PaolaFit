@@ -4,7 +4,7 @@ import React, { useMemo } from "react";
 import { motion } from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
-import ButtonOutline from "./misc/ButtonOutline.";
+import ButtonOutline from "./misc/ButtonOutline";
 
 const features = [
   "Choose your favorite colors",
@@ -18,32 +18,48 @@ const Feature = () => {
 
   return (
     <div
-      className="max-w-screen-xl mt-8 mb-6 content-center sm:mt-14 lg:mt-4 sm:mb-14 px-6 sm:px-8 lg:px-16 mx-auto"
+      className="max-w-screen-xl mt-8 mb-6 sm:mt-14 lg:mt-4 sm:mb-14 px-6 sm:px-8 lg:px-16 mx-auto"
       id="feature"
     >
-      <div className="grid grid-flow-row  sm:grid-flow-col grid-cols-1 sm:grid-cols-2 gap-2  my-12">
-        <ScrollAnimationWrapper className={"content-center"}>
+      <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-2 gap-8 my-12 items-center">
+        <ScrollAnimationWrapper className="flex justify-center sm:justify-end">
           <motion.div
-            className="flex flex-col items-center lg:items-end justify-center w-full lg:w-9/12"
+            className="w-full lg:w-3/4 relative"
             variants={scrollAnimation}
           >
-            <h3 className="text-3xl lg:text-4xl font-bold leading-relaxed text-black-600">
-              Visit my shop
+            <Image
+              src="/assets/PaolaTienda.png"
+              alt="Fitness Apparel"
+              layout="responsive"
+              quality={100}
+              height={400}
+              width={400}
+              className="drop-shadow-xxl shadow-xl rounded-full"
+            />
+          </motion.div>
+        </ScrollAnimationWrapper>
+
+        <ScrollAnimationWrapper>
+          <motion.div
+            className="flex flex-col items-center lg:items-start justify-center w-full"
+            variants={scrollAnimation}
+          >
+            <h3 className="text-4xl lg:text-4xl font-light leading-relaxed text-gray-800">
+              Explore my shop
             </h3>
-            <p className="my-2 text-black-500">
-              Explore our curated collection of fitness wear
+            <p className="my-4 text-gray-600 text-lg">
+              Unleash your potential with our premium fitness apparel.
             </p>
-            <ul className="text-black-500 self-center list-inside ml-8">
+            <ul className="text-gray-600 text-lg list-disc pl-5 mb-4">
               {features.map((feature, index) => (
                 <motion.li
-                  className="relative circle-check custom-list"
+                  key={feature}
                   custom={{ duration: 2 + index }}
                   variants={scrollAnimation}
-                  key={feature}
                   whileHover={{
-                    scale: 1.1,
+                    scale: 1.05,
                     transition: {
-                      duration: 0.2,
+                      duration: 0.3,
                     },
                   }}
                 >
@@ -51,25 +67,19 @@ const Feature = () => {
                 </motion.li>
               ))}
             </ul>
-            <div className="mt-6  self-center">
-              <ButtonOutline>Shop now</ButtonOutline>
-            </div>
-          </motion.div>
-        </ScrollAnimationWrapper>
-        <ScrollAnimationWrapper className="flex w-[80%] justify-end lg:justify-center ">
-          <motion.div
-            className="h-2/3 w-2/3 rounded-full"
-            variants={scrollAnimation}
-          >
-            <Image
-              src="/assets/PaolaTienda.png"
-              alt="VPN Illustrasi"
-              layout="responsive"
-              quality={100}
-              height={5}
-              width={5}
-              className="drop-shadow-xxl rounded-full "
-            />
+            <motion.div
+              className="flex justify-center lg:justify-start space-x-3"
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.6 }}
+            >
+              <ButtonOutline className="bg-yellow-400 hover:bg-yellow-500 text-white font-bold py-3 px-6 rounded-lg shadow-lg">
+                Shop Now
+              </ButtonOutline>
+              <ButtonOutline className="bg-gray-800 hover:bg-gray-900 text-white font-bold py-3 px-6 rounded-lg shadow-lg">
+                Learn More
+              </ButtonOutline>
+            </motion.div>
           </motion.div>
         </ScrollAnimationWrapper>
       </div>

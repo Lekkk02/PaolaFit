@@ -78,6 +78,13 @@ li.check:before {
 #about{
   background: linear-gradient(to right bottom, white 50%,  rgb(3 105 161) 50%);
 }
+
+#collection{
+  background: linear-gradient(to left top, rgb(246, 249, 255) 50%,  rgba(2, 60, 92, 0.692) 90%);
+
+}
+
+
 @keyframes gradient {
   0%, 100% {
     background-position: 0%;
