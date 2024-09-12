@@ -119,6 +119,39 @@ const LandingPage = () => {
                   />
                 </div>
               </div>
+              <div className="p-5">
+                <div className="relative overflow-hidden max-h-[520px] rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-1000">
+                  <Image
+                    src={"/assets/carousel/7.JPG"}
+                    alt="Collection Item 6"
+                    width={1080}
+                    height={1080}
+                    className="object-cover w-full h-full transform hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+              </div>
+              <div className="p-5">
+                <div className="relative overflow-hidden max-h-[520px] rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-1000">
+                  <Image
+                    src={"/assets/carousel/8.JPG"}
+                    alt="Collection Item 6"
+                    width={1080}
+                    height={1080}
+                    className="object-cover w-full h-full transform hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+              </div>
+              <div className="p-5">
+                <div className="relative overflow-hidden max-h-[520px] rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-1000">
+                  <Image
+                    src={"/assets/carousel/9.JPG"}
+                    alt="Collection Item 6"
+                    width={1080}
+                    height={1080}
+                    className="object-cover w-full h-full transform hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+              </div>
             </Carousel>
           </div>
         </div>

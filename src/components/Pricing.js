@@ -12,7 +12,7 @@ const Pricing = () => {
 
   return (
     <div
-      className="bg-gradient-to-b from-gray-100 to-gray-200 w-full py-14"
+      className="bg-gradient-to-b from-white-300 to-white-500 w-full py-14"
       id="pricing"
     >
       <div className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto flex flex-col w-full text-center justify-center">
@@ -95,7 +95,6 @@ const Pricing = () => {
                   <p className="text-2xl font-bold text-gray-800 mb-4">
                     {plan.price}
                   </p>
-                  <ButtonPrimary>Select Plan</ButtonPrimary>
                 </motion.div>
               </ScrollAnimationWrapper>
             ))}
