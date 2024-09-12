@@ -5,7 +5,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Paola Stefany",
-  description: "Landing page by Maikel Garcia",
+  description: "Paola Stefany Landing Page - PaolaFit",
 };
 
 export default function RootLayout({ children }) {
